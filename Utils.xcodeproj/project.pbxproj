@@ -11,6 +11,7 @@
 		65D7D1FE2C6B9FFF00095A15 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D7D1F32C6B9FFF00095A15 /* Utils.framework */; };
 		65D7D2032C6B9FFF00095A15 /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7D2022C6B9FFF00095A15 /* UtilsTests.swift */; };
 		65D7D2042C6B9FFF00095A15 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D7D1F62C6B9FFF00095A15 /* Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65D7D20F2C6BA03C00095A15 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7D20D2C6BA03C00095A15 /* NetworkReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		65D7D1F72C6B9FFF00095A15 /* Utils.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Utils.docc; sourceTree = "<group>"; };
 		65D7D1FD2C6B9FFF00095A15 /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D7D2022C6B9FFF00095A15 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		65D7D20D2C6BA03C00095A15 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 		65D7D1F52C6B9FFF00095A15 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				65D7D1F62C6B9FFF00095A15 /* Utils.h */,
 				65D7D1F72C6B9FFF00095A15 /* Utils.docc */,
+				65D7D1F62C6B9FFF00095A15 /* Utils.h */,
+				65D7D20E2C6BA03C00095A15 /* Network */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -83,6 +86,14 @@
 				65D7D2022C6B9FFF00095A15 /* UtilsTests.swift */,
 			);
 			path = UtilsTests;
+			sourceTree = "<group>";
+		};
+		65D7D20E2C6BA03C00095A15 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				65D7D20D2C6BA03C00095A15 /* NetworkReachability.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D7D1F82C6B9FFF00095A15 /* Utils.docc in Sources */,
+				65D7D20F2C6BA03C00095A15 /* NetworkReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +423,7 @@
 		65D7D20B2C6B9FFF00095A15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QJFWMSLWU;
@@ -427,6 +440,7 @@
 		65D7D20C2C6B9FFF00095A15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QJFWMSLWU;
